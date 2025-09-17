@@ -1,4 +1,4 @@
-import Buyer from "../models/BuyerModel.js";
+import Buyer from "../models/buyerModel.js";
 import Plant from "../models/PlantModel.js";
 
 // GET all buyers
