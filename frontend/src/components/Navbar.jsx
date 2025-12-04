@@ -51,6 +51,11 @@ const Navbar = (props) => {
               Admin
             </NavLink>
           </li>
+           <li>
+            <NavLink to="/plantsentry" className={linkClasses}>
+              PlantsEntry
+            </NavLink>
+          </li>
           <li>
             <NavLink to="/login" className={linkClasses}>
               <button onClick={handleLogout}>Logout</button>
@@ -97,6 +102,11 @@ const Navbar = (props) => {
             <li>
               <NavLink to="/admin" className={linkClasses} onClick={toggleMenu}>
                 Admin
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/plantsentry" className={linkClasses} onClick={toggleMenu}>
+                PlantsEntry
               </NavLink>
             </li>
             <li>

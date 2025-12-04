@@ -7,6 +7,9 @@ import AdminPage from "./pages/AdminPage";
 import { Route, Routes } from "react-router-dom";
 import Login from "./components/Login";
 import { useState, useEffect } from "react";
+import PlantsPage from "./pages/PlantsPage";
+
+export const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 
 const App = () => {
@@ -37,6 +40,7 @@ const App = () => {
               <Route path="/workers" element={<WorkerPage />} />
               <Route path="/admin" element={<AdminPage />} />{" "}
               {/* ✅ Admin route */}
+              <Route path="/plantsentry" element={<PlantsPage />} />
             </Routes>
           </div>
         </>

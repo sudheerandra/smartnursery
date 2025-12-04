@@ -7,6 +7,7 @@ import buyerRoutes from "./routes/buyerRoute.js";
 import plantRoutes from "./routes/plantRoutes.js";
 import workerRoutes from "./routes/workerRoutes.js";
 import adminRoute from "./routes/adminRoute.js"
+import nurseryRoutes from "./routes/nurseries.js";
 
 
 dotenv.config();
@@ -29,6 +30,8 @@ app.use("/api/user", adminRoute);
 app.use("/api/plants", plantRoutes);
 app.use("/api/buyers", buyerRoutes);
 app.use("/api/workers", workerRoutes);
+app.use("/api/plants", plantRoutes);
+app.use("/api/nurseries", nurseryRoutes);
 
 app.get('/',(req,res)=>{
     res.send("API WORKING")
